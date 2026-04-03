@@ -1,4 +1,4 @@
-# ComfyUI Docker Image
+# ComfyUI Docker Image 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-jimlee2048%2Fcomfyui--docker-blue?logo=github)](https://github.com/jimlee2048/comfyui-docker)
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-jimlee2048%2Fcomfyui--docker-blue?logo=docker)](https://hub.docker.com/r/jimlee2048/comfyui-docker)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jimlee2048/comfyui-docker/build-publish.yml)](https://github.com/jimlee2048/comfyui-docker/actions/workflows/build-publish.yml)
