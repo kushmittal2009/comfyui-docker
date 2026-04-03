@@ -1,0 +1,20 @@
+[[custom_nodes]]
+node_id = "ComfyUI-WanVideoWrapper"
+version = "latest"
+
+[[custom_nodes]]
+node_id = "ComfyUI-MelBandRoFormer"
+version = "latest"
+
+[[custom_nodes]]
+node_id = "comfyui-kjnodes"
+version = "latest"
+
+[[custom_nodes]]
+node_id = "comfyui-videohelpersuite"
+version = "latest"
+
+[[models]]
+url = "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/umt5-xxl-enc-fp8_e4m3fn.safetensors"
+dir = "models/text_encoders"
+filename = "umt5-xxl-enc-fp8_e4m3fn.safetensors"
