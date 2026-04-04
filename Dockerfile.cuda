@@ -144,8 +144,8 @@ RUN mkdir -p \
 
 RUN /bin/bash -lc 'set -euo pipefail; \
     cd ${COMFYUI_PATH}; \
-    wget -O models/diffusion_models/Wan2_1-I2V-14B-MAGREF_fp8_e4m3fn_scaled_KJ.safetensors \
-      "https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/resolve/main/I2V/Wan2_1-I2V-14B-MAGREF_fp8_e4m3fn_scaled_KJ.safetensors"; \
+    wget -O models/diffusion_models/Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors \
+      "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors"; \
     wget -O models/diffusion_models/wan2.1_infiniteTalk_single_fp8_e4m3fn_scaled.safetensors \
       "https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/resolve/main/InfiniteTalk/Wan2_1-InfiniteTalk-Single_fp8_e4m3fn_scaled_KJ.safetensors"; \
     wget -O models/clip_vision/clip_vision_h.safetensors \
