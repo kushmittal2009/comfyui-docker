@@ -14,7 +14,7 @@ services:
       ## models folder
       - ./volumes/models:/workspace/ComfyUI/models
       # boot process related paths
-      ## boot config folder (optional if INIT_NODE & INIT_MODEL == false)
+      ## boot config folder (optional; overrides the config baked into the image)
       - ./config:/workspace/boot_config
       ## scripts (optional if you don't have any custom scripts)
       - ./scripts:/workspace/scripts

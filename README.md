@@ -58,7 +58,9 @@ A Customizable [ComfyUI](https://github.com/comfyanonymous/ComfyUI) docker image
 
 3. (Optional) Set up automatic node/model management:
     - Set `INIT_NODE=true`  or/and `INIT_MODEL=true` in `docker/.env`
-    - Create your boot config in `docker/config/`
+    - Default boot config is baked into the image from `docker/config/`
+    - Edit `docker/config/` if you want to customize the baked defaults before building
+    - Or mount your own config directory to `/workspace/boot_config` to override the baked config at runtime
     see [docker/config/example.toml](https://github.com/jimlee2048/comfyui-docker/blob/main/docker/config/example.toml) for more details.
 
 4. Create and configure `docker/compose.yml` file base on example:

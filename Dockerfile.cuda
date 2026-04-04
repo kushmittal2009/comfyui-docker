@@ -12,6 +12,10 @@ WORKDIR ${WORKDIR}
 ENV COMFYUI_PATH=${WORKDIR}/ComfyUI
 ENV COMFYUI_MN_PATH=${COMFYUI_PATH}/custom_nodes/comfyui-manager
 
+# Bake the repo's default boot config into the image so startup still works
+# without a bind mount. A mounted /workspace/boot_config will override this.
+COPY docker/config ${WORKDIR}/boot_config
+
 ARG DEBIAN_FRONTEND=noninteractive
 RUN --mount=type=cache,target=/var/cache/apt \
     apt-get update \
